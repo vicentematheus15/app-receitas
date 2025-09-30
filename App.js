@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 import Home from './telas/Home';
-import Receitas from './telas/receitas';
+import Receitas from './telas/Receitas';
 
 export default function App() {
   const [navegacao, setNavegacao] = useState('Home')

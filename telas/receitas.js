@@ -6,9 +6,7 @@ export default function Receitas({navegar}){
             <Text>Receitas</Text>
 
             <TouchableOpacity onPress={() => navegar('Home')}>
-                <Text>
-                    Voltar para Home
-                </Text>
+                <Text>Voltar</Text>
             </TouchableOpacity>
         </View>
     )
