@@ -13,7 +13,7 @@ export default function App() {
     <View style={styles.container}>
 
       {(navegacao === 'Home') ? (
-        <Home></Home>
+        <Home navegar={navegar}></Home>
       ) : (
         <Text>
           Página não encontrada 404
