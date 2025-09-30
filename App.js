@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 import Home from './telas/Home';
+import Receitas from './telas/Receitas';
 
 export default function App() {
-  const [navegacao, setNavegacao] = useState('')
+  const [navegacao, setNavegacao] = useState('Home')
 
   const navegar = (tela) => {
     setNavegacao(tela)
@@ -14,6 +15,8 @@ export default function App() {
 
       {(navegacao === 'Home') ? (
         <Home navegar={navegar}></Home>
+      ) : navegacao === 'Receitas' ? (
+        <Receitas navegar={navegar}></Receitas>
       ) : (
         <Text>
           Página não encontrada 404

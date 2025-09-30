@@ -7,7 +7,7 @@ export default function Home({navegar}){
                 Bem vindo!
             </Text>
 
-            <TouchableOpacity onPress={() => {navegar('Receitas')}}>
+            <TouchableOpacity onPress={() => navegar('Receitas')}>
                 <Text>
                     Ver Receitas
                 </Text>
