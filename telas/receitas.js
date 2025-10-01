@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {View, Text, TouchableOpacity, ScrollView} from 'react-native'
+import {View, Text, TouchableOpacity, ScrollView, Image} from 'react-native'
 
 export default function Receitas({navegar}){
     const [view, setView] = useState('lista')
@@ -9,12 +9,14 @@ export default function Receitas({navegar}){
     return(
         <View>
             <ScrollView>
+                <View>
+                    <TouchableOpacity onPress={() => navegar('Home')}>
+                        <Image source={require('../assets/arrow-bg.png')}/>
+                    </TouchableOpacity>
+                   <Text>Receitas</Text>
+                </View>
 
-                <Text>Receitas</Text>
 
-                <TouchableOpacity onPress={() => navegar('Home')}>
-                    <Text>Voltar</Text>
-                </TouchableOpacity>
 
             </ScrollView>
         </View>
