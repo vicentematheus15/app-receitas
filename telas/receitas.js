@@ -12,7 +12,7 @@ export default function Receitas({navegar}){
                 <View>
                     <TouchableOpacity onPress={() => navegar('Home')}>
                         <Image 
-                      
+                        style={styles.imagem}
                         source={require('../assets/arrow-bg.png')}
                         />
                     </TouchableOpacity>
@@ -34,3 +34,10 @@ export default function Receitas({navegar}){
         </View>
     )
 }
+const styles = StyleSheet.create({
+    imagem: {
+        borderWidth: 1,
+        borderColor: '#111',
+        borderRadius: 10
+    }
+})
