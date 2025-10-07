@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 
+// Função que representa a tela Home
 export default function Home({navegar}){
     return (
         <View style={styles.container}>
@@ -7,6 +8,7 @@ export default function Home({navegar}){
                 Bem vindo!
             </Text>
 
+{/* Botão que, ao ser pressionado, vai para a tela Receitas */}
             <TouchableOpacity 
             onPress={() => navegar('Receitas')}
             style={styles.button}>
