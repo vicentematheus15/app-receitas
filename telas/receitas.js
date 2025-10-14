@@ -11,12 +11,12 @@ import {
 // Importando o componente que será usado para adicionar receitas
 import AdicionarReceitas from "../componentes/AdicionarReceitas";
 
-// Função que representa a tela Receitas
-export default function Receitas({ navegar }) {
 
+
+// Função que representa a tela Receitas
+export default function Receitas({ navigation }) {
   // Controla se está mostrando a lista ou o formulário
   const [view, setView] = useState("lista");
-
   // Lista de receitas (por enquanto com um número 12 só como exemplo)
   const [receitas, setReceitas] = useState([12]);
 
@@ -25,7 +25,7 @@ export default function Receitas({ navegar }) {
       <ScrollView>
         <View>
 {/* Botão de voltar para a tela Home */}
-          <TouchableOpacity onPress={() => navegar("Home")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <Image
               style={styles.imagem}
               source={require("../assets/arrow-bg.png")}
