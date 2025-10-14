@@ -15,16 +15,9 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" component={Home} options={{title: 'Início'}}></Stack.Screen>
+        <Stack.Screen name="Receitas" component={Receitas} options={{title: 'Receitas'}}></Stack.Screen>
+
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
