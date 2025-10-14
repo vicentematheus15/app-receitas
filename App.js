@@ -1,4 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+
 import { useState } from 'react';
 import Home from './telas/Home';
 import Receitas from './telas/Receitas';
