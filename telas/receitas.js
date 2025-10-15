@@ -44,7 +44,7 @@ export default function Receitas({ navigation }) {
       <ScrollView>
         <View>
 {/* Botão de voltar para a tela Home */}
-          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image
               style={styles.imagem}
               source={require("../assets/arrow-bg.png")}/>
