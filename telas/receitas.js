@@ -7,11 +7,13 @@ import AdicionarReceitas from "../componentes/AdicionarReceitas";
 const DADOS_FAKE = [
   { id: '1',
     nome: 'Bolo de cenoura',
-    ingredientes: 'Cenoura'
+    ingredientes: 'Cenoura',
+    modoDePreparo: 'ada'
   },
   { id: '2',
     nome: 'Pão de queijo',
-    ingredientes: 'Queijo'
+    ingredientes: 'Queijo',
+    modoDePreparo: 'sdd'
   }
 ]
 
@@ -24,11 +26,13 @@ export default function Receitas({ navigation }) {
 
   const renderizaItemReceita = ({item}) => {
     console.log(item);
-    <View>
-      <Text>{item.nome}</Text>
-      <Text>{item.ingredientes}</Text>
-    </View>
-
+    
+    return (
+      <View>
+        <Text>{item.nome}</Text>
+        <Text>{item.ingredientes}</Text>
+      </View>
+    )
   }
 
   return (
