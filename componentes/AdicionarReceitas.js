@@ -13,7 +13,11 @@ export default function AdicionarReceitas() {
             return
         }
 
-
+        const novaReceita = {
+            nome,
+            ingredientes,
+            modoPreparo
+        }
         
 
 
