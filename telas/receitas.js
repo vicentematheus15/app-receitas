@@ -1,24 +1,35 @@
 import { useState } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  ScrollView,
-  Image,
-  StyleSheet,
-} from "react-native";
+import { View, Text, TouchableOpacity, ScrollView, Image, StyleSheet, FlatList } from "react-native";
 
 // Importando o componente que será usado para adicionar receitas
 import AdicionarReceitas from "../componentes/AdicionarReceitas";
 
-
+const DADOS_FAKE = [
+  { id: '1',
+    nome: 'Bolo de cenoura',
+    ingredientes: 'Cenoura'
+  },
+  { id: '2',
+    nome: 'Pão de queijo',
+    ingredientes: 'Queijo'
+  }
+]
 
 // Função que representa a tela Receitas
 export default function Receitas({ navigation }) {
   // Controla se está mostrando a lista ou o formulário
   const [view, setView] = useState("lista");
   // Lista de receitas (por enquanto com um número 12 só como exemplo)
-  const [receitas, setReceitas] = useState([12]);
+  const [receitas, setReceitas] = useState([DADOS_FAKE]);
+
+  const renderizaItemReceita = ({item}) => {
+    console.log(item);
+    <View>
+      <Text>{item.nome}</Text>
+      <Text>{item.ingredientes}</Text>
+    </View>
+
+  }
 
   return (
     <View>
@@ -28,8 +39,7 @@ export default function Receitas({ navigation }) {
           <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <Image
               style={styles.imagem}
-              source={require("../assets/arrow-bg.png")}
-            />
+              source={require("../assets/arrow-bg.png")}/>
           </TouchableOpacity>
           <Text>Receitas</Text>
         </View>
@@ -42,14 +52,11 @@ export default function Receitas({ navigation }) {
                 <Text>Adicionar receita</Text>
             </TouchableOpacity>
             
-            {/* Se não tiver receitas, mostra a mensagem */}
-            {receitas.length === 0 ? (
-              <Text>Nenhuma receita cadastrada</Text>
-            ) : (
-              <View>
-                {/* Aqui será exibida a lista de receitas futuramente */}
-              </View>
-            )}
+            <FlatList
+              data={receitas}
+              keyExtractor={item => item.id}
+              renderItem={renderizaItemReceita}
+            ></FlatList>
           </View>
         ) : (
           <View>
