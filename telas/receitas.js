@@ -8,19 +8,19 @@ const DADOS_FAKE = [
   { id: '1',
     nome: 'Bolo de cenoura',
     ingredientes: 'Cenoura',
-    modoDePreparo: 'Faça um bolo com cenoura'
+    modoPreparo: 'Faça um bolo com cenoura'
   },
   { id: '2',
     nome: 'Pão de queijo',
     ingredientes: 'Queijo',
-    modoDePreparo: 'Faça a massa de pão de quejo'
+    modoPreparo: 'Faça a massa de pão de quejo'
   }
 ]
 
 // Função que representa a tela Receitas
 export default function Receitas({ navigation }) {
   // Controla se está mostrando a lista ou o formulário
-  const [view, setView] = useState("lista");
+  const [view, setView] = useState("formulario");
   // Lista de receitas (por enquanto com um número 12 só como exemplo)
   const [receitas, setReceitas] = useState(DADOS_FAKE);
 
@@ -34,7 +34,7 @@ export default function Receitas({ navigation }) {
         <Text>Ingredientes</Text>
         <Text>{item.ingredientes}</Text>
         <Text>Modo de Preparo</Text>
-        <Text>{item.modoDePreparo}</Text>
+        <Text>{item.modoPreparo}</Text>
       </View>
     )
   }
