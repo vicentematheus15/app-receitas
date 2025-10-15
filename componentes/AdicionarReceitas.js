@@ -19,7 +19,9 @@ export default function AdicionarReceitas() {
             modoPreparo
         }
         
-
+        console.log(novaReceita);
+        alert('Receita criada com sucesso!')
+    }
 
     
     return(
