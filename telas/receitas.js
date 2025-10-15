@@ -29,9 +29,12 @@ export default function Receitas({ navigation }) {
     
     return (
       <View>
-        <Text>Título: {item.nome}</Text>
-        <Text>Ingredientes: {item.ingredientes}</Text>
-        <Text>Modo de Preparo: {item.modoDePreparo}</Text>
+        <Text>Título</Text>
+        <Text>{item.nome}</Text>
+        <Text>Ingredientes</Text>
+        <Text>{item.ingredientes}</Text>
+        <Text>Modo de Preparo</Text>
+        <Text>{item.modoDePreparo}</Text>
       </View>
     )
   }
