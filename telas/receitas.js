@@ -8,12 +8,12 @@ const DADOS_FAKE = [
   { id: '1',
     nome: 'Bolo de cenoura',
     ingredientes: 'Cenoura',
-    modoDePreparo: 'ada'
+    modoDePreparo: 'Faça um bolo com cenoura'
   },
   { id: '2',
     nome: 'Pão de queijo',
     ingredientes: 'Queijo',
-    modoDePreparo: 'sdd'
+    modoDePreparo: 'Faça a massa de pão de quejo'
   }
 ]
 
@@ -22,15 +22,16 @@ export default function Receitas({ navigation }) {
   // Controla se está mostrando a lista ou o formulário
   const [view, setView] = useState("lista");
   // Lista de receitas (por enquanto com um número 12 só como exemplo)
-  const [receitas, setReceitas] = useState([DADOS_FAKE]);
+  const [receitas, setReceitas] = useState(DADOS_FAKE);
 
   const renderizaItemReceita = ({item}) => {
     console.log(item);
     
     return (
       <View>
-        <Text>{item.nome}</Text>
-        <Text>{item.ingredientes}</Text>
+        <Text>Título: {item.nome}</Text>
+        <Text>Ingredientes: {item.ingredientes}</Text>
+        <Text>Modo de Preparo: {item.modoDePreparo}</Text>
       </View>
     )
   }
@@ -60,7 +61,7 @@ export default function Receitas({ navigation }) {
               data={receitas}
               keyExtractor={item => item.id}
               renderItem={renderizaItemReceita}
-            ></FlatList>
+            />
           </View>
         ) : (
           <View>
