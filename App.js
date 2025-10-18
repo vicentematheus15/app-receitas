@@ -8,9 +8,6 @@ import Home from './telas/Home';
 import Receitas from './telas/Receitas';
 
 export default function App() {
-  
-
-  // Retorno do componente principal
   return (
     // Container principal da navegação do app
     <NavigationContainer>
