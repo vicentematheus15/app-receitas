@@ -12,6 +12,7 @@ export default function App() {
 
   // Retorno do componente principal
   return (
+    // Container principal da navegação do app
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" component={Home} options={{title: 'Início'}}></Stack.Screen>
