@@ -11,6 +11,7 @@ export default function App() {
   return (
     // Container principal da navegação do app
     <NavigationContainer>
+       {/* Define as telas e a forma de navegação (em pilha) */}
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" component={Home} options={{title: 'Início'}}></Stack.Screen>
         <Stack.Screen name="Receitas" component={Receitas} options={{title: 'Receitas'}}></Stack.Screen>
