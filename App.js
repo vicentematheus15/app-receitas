@@ -19,7 +19,6 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} options={{title: 'Início'}}></Stack.Screen>
         {/* Segunda tela: Receitas */}
         <Stack.Screen name="Receitas" component={Receitas} options={{title: 'Receitas'}}></Stack.Screen>
-
       </Stack.Navigator>
     </NavigationContainer>
   );
