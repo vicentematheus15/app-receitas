@@ -13,6 +13,7 @@ export default function App() {
     <NavigationContainer>
        {/* Define as telas e a forma de navegação (em pilha) */}
       <Stack.Navigator initialRouteName='Home'>
+        {/* Tela inicial do app */}
         <Stack.Screen name="Home" component={Home} options={{title: 'Início'}}></Stack.Screen>
         <Stack.Screen name="Receitas" component={Receitas} options={{title: 'Receitas'}}></Stack.Screen>
 
