@@ -25,6 +25,7 @@ export default function Receitas({ navigation }) {
   // Lista de receitas armazenadas no estado (inicialmente com dados fake)
   const [receitas, setReceitas] = useState(DADOS_FAKE);
 
+  // Função que define como cada item da lista será mostrado
   const renderizaItemReceita = ({item}) => {
     console.log(item);
     
