@@ -54,7 +54,7 @@ export default function Receitas({ navigation }) {
           <Text>Receitas</Text>
         </View>
 
-{/* Verifica se a view está como "lista" ou "formulario" */}
+{/* Exibe lista ou formulário, dependendo do estado "view" */}
         {view === "lista" ? (
           <View>
             {/* Botão para trocar para o formulário */}
