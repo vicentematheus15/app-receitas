@@ -20,7 +20,7 @@ const DADOS_FAKE = [
 
 // Função que representa a tela Receitas
 export default function Receitas({ navigation }) {
-  // Controla se está mostrando a lista ou o formulário
+  // Controla o que está sendo exibido: lista de receitas ou formulário
   const [view, setView] = useState("formulario");
   // Lista de receitas (por enquanto com um número 12 só como exemplo)
   const [receitas, setReceitas] = useState(DADOS_FAKE);
