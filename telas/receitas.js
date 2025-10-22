@@ -4,6 +4,7 @@ import { View, Text, TouchableOpacity, ScrollView, Image, StyleSheet, FlatList }
 // Importando o componente que será usado para adicionar receitas
 import AdicionarReceitas from "../componentes/AdicionarReceitas";
 
+// Dados de exemplo (mock) usados enquanto não há integração real
 const DADOS_FAKE = [
   { id: '1',
     nome: 'Bolo de cenoura',
