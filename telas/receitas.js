@@ -22,7 +22,7 @@ const DADOS_FAKE = [
 export default function Receitas({ navigation }) {
   // Controla o que está sendo exibido: lista de receitas ou formulário
   const [view, setView] = useState("formulario");
-  // Lista de receitas (por enquanto com um número 12 só como exemplo)
+  // Lista de receitas armazenadas no estado (inicialmente com dados fake)
   const [receitas, setReceitas] = useState(DADOS_FAKE);
 
   const renderizaItemReceita = ({item}) => {
