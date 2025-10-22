@@ -62,6 +62,7 @@ export default function Receitas({ navigation }) {
                 <Text>Adicionar receita</Text>
             </TouchableOpacity>
             
+            {/* Lista as receitas usando FlatList */}
             <FlatList
               data={receitas}
               keyExtractor={item => item.id}
