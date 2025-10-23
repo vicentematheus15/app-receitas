@@ -3,6 +3,7 @@ import { ScrollView, Text, TouchableOpacity} from 'react-native';
 import { TextInput } from 'react-native-web';
 
 export default function AdicionarReceitas() {
+    // Estados para armazenar os valores digitados nos campos
     const [nome, setNome] = useState('')
     const [ingredientes, setIngredientes] = useState('')
     const [modoPreparo, setModoPreparo] = useState('')
