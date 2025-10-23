@@ -8,6 +8,7 @@ export default function AdicionarReceitas() {
     const [ingredientes, setIngredientes] = useState('')
     const [modoPreparo, setModoPreparo] = useState('')
 
+    // Função chamada ao clicar em "Salvar"
     const salvar = () => {
         if(!nome.trim() || !ingredientes.trim() || !modoPreparo.trim()){
             alert('É necessário preencher todos os campos')
