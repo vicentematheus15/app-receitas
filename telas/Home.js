@@ -8,7 +8,7 @@ export default function Home({navigation}){
                 Bem vindo!
             </Text>
 
-{/* Botão que, ao ser pressionado, vai para a tela Receitas */}
+{/* Botão que leva o usuário para a tela "Receitas" */}
             <TouchableOpacity 
             onPress={() => navigation.navigate('Receitas')}
             style={styles.button}>
