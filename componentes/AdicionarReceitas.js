@@ -30,13 +30,14 @@ export default function AdicionarReceitas() {
     return(
         <ScrollView>
             <Text>Adicionar Receita</Text>
-            
+
             {/* Campo: nome da receita */}
             <TextInput 
                 value={nome} 
                 onChangeText={setNome}
                 placeholder='Digite o nome da receita'
             />
+            {/* Campo: ingredientes */}
             <TextInput
                 value={ingredientes}
                 onChangeText={setIngredientes}
