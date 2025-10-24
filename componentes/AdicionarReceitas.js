@@ -26,11 +26,11 @@ export default function AdicionarReceitas() {
         console.log(novaReceita);
         alert('Receita criada com sucesso!')
     }
-
     
     return(
         <ScrollView>
             <Text>Adicionar Receita</Text>
+            
             {/* Campo: nome da receita */}
             <TextInput 
                 value={nome} 
