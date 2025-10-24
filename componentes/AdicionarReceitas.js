@@ -43,6 +43,7 @@ export default function AdicionarReceitas() {
                 onChangeText={setIngredientes}
                 placeholder='Digite os ingredientes'
             />
+            {/* Campo: modo de preparo */}
             <TextInput
                 value={modoPreparo}
                 onChangeText={setModoPreparo}
