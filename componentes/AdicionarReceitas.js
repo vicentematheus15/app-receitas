@@ -31,6 +31,7 @@ export default function AdicionarReceitas() {
     return(
         <ScrollView>
             <Text>Adicionar Receita</Text>
+            {/* Campo: nome da receita */}
             <TextInput 
                 value={nome} 
                 onChangeText={setNome}
