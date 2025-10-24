@@ -10,6 +10,7 @@ export default function AdicionarReceitas() {
 
     // Função chamada ao clicar em "Salvar"
     const salvar = () => {
+        // Verifica se todos os campos estão preenchidos
         if(!nome.trim() || !ingredientes.trim() || !modoPreparo.trim()){
             alert('É necessário preencher todos os campos')
             return
