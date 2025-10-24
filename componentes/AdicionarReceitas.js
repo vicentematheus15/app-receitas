@@ -16,6 +16,7 @@ export default function AdicionarReceitas() {
             return
         }
 
+        // Cria um objeto com os dados da nova receita
         const novaReceita = {
             nome,
             ingredientes,
