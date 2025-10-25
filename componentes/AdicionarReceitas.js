@@ -37,6 +37,7 @@ export default function AdicionarReceitas() {
                 onChangeText={setNome}
                 placeholder='Digite o nome da receita'
             />
+            
             {/* Campo: ingredientes */}
             <TextInput
                 value={ingredientes}
@@ -49,7 +50,7 @@ export default function AdicionarReceitas() {
                 onChangeText={setModoPreparo}
                 placeholder='Digite o modo de preparo'
             />
-            
+
             {/* Botão para salvar a receita */}
             <TouchableOpacity onPress={salvar}>
                 <Text>Salvar</Text>
