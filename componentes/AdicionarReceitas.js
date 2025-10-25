@@ -49,7 +49,7 @@ export default function AdicionarReceitas() {
                 onChangeText={setModoPreparo}
                 placeholder='Digite o modo de preparo'
             />
-
+            {/* Botão para salvar a receita */}
             <TouchableOpacity onPress={salvar}>
                 <Text>Salvar</Text>
             </TouchableOpacity>
